@@ -19,9 +19,6 @@ import android.text.TextUtils;
 
 /**
  * 单（多）文件多线程下载
- * 
- * @author Wayne
- * 
  */
 public class FileDownloadHelper {
 	/**

@@ -3,7 +3,6 @@ package com.proj.androidlib;
 import java.util.Stack;
 
 import android.app.Activity;
-import android.app.ActivityManager;
 import android.content.Context;
 
 /**
