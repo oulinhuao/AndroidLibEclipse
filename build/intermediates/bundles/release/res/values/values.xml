@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="kdmsp_down_soft_complete">下载完成，请点击安装。</string>
+    <string name="kdmsp_down_soft_notice_path">KDDownLoad</string>
+    <string name="kdmsp_down_soft_notice_titile">正在下载%1$s程序安装包\u2026</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+</resources>
