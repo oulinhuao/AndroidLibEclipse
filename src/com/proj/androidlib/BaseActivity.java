@@ -19,6 +19,7 @@ public abstract class BaseActivity extends Activity implements
 		super.onCreate(savedInstanceState);
 		// 添加Activity到堆栈
 		AppManager.getAppManager().addActivity(this);
+		init();
 		getViews();
 		setListeners();
 	}
@@ -30,6 +31,10 @@ public abstract class BaseActivity extends Activity implements
 		AppManager.getAppManager().finishActivity(this);
 	}
 
+	/**
+	 * 初始化事件
+	 */
+	protected abstract void init();
 	/**
 	 * 绑定View
 	 */
