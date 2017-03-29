@@ -3,6 +3,7 @@ package com.proj.androidlib;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.view.View.OnClickListener;
 
 
 /**
@@ -10,15 +11,16 @@ import android.support.v4.app.FragmentActivity;
  * @author Wayne
  *
  */
-public abstract class BaseFragmentActivity extends FragmentActivity {
+public abstract class BaseFragmentActivity extends FragmentActivity  implements
+	OnClickListener {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		// 添加Activity到堆栈
 		AppManager.getAppManager().addActivity(this);
-		init();
 		getViews();
+		init();
 		setListeners();
 	}
 

@@ -19,8 +19,8 @@ public abstract class BaseActivity extends Activity implements
 		super.onCreate(savedInstanceState);
 		// 添加Activity到堆栈
 		AppManager.getAppManager().addActivity(this);
-		init();
 		getViews();
+		init();
 		setListeners();
 	}
 
