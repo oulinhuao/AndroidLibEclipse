@@ -17,6 +17,7 @@ public abstract class BaseFragmentActivity extends FragmentActivity {
 		super.onCreate(savedInstanceState);
 		// 添加Activity到堆栈
 		AppManager.getAppManager().addActivity(this);
+		init();
 		getViews();
 		setListeners();
 	}
@@ -28,6 +29,10 @@ public abstract class BaseFragmentActivity extends FragmentActivity {
 		AppManager.getAppManager().finishActivity(this);
 	}
 
+	/**
+	 * 初始化事件
+	 */
+	protected abstract void init();
 	/**
 	 * 绑定View
 	 */
